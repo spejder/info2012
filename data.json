@@ -1,0 +1,9 @@
+{
+  "news" : [“newsstring1”, “newsstring2”],
+  "images" : [{
+	“url”: “a.jpeg”,
+	“description”: “Beskrivelse”,
+“author”: “MHD”
+}],
+  "videos" : [“http://youtube.com/?v=ABCDEF24325”]
+}
