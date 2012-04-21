@@ -1,16 +1,3 @@
-{
-    "images": [
-        {
-            "author": "MHD", 
-            "description": "Beskrivelse", 
-            "url": "a.jpeg"
-        }
-    ], 
-    "news": [
-        "newsstring1", 
-        "newsstring2"
-    ], 
-    "videos": [
-        "http://youtube.com/?v=ABCDEF24325"
-    ]
-}
+/*
+	JSON stub er flyttet til feed_proxy_stub.js, eftersom man ikke kan læse en fil direkte fra JS
+*/
