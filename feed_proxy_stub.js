@@ -14,9 +14,10 @@ var feed_proxy = {
 						"newsstring1", 
 						"newsstring2"
 						], 
-						"videos": [
+						"video": [
 						"http://youtube.com/?v=ABCDEF24325"
-						]
+						],
+                        "mode": "normal"
 						});
            }
 }
