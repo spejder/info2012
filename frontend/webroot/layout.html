@@ -24,46 +24,46 @@ function startSlideshow(){
 	// find the contents...
 	var images = [
       {
-          "author": "MHD", 
-          "description": "Beskrivelse", 
+          "author": "MHD",
+          "description": "Beskrivelse",
           "src": "http://flab.dk/~mads/sl2012/info/imgtest/720/IMG_0204.jpg",
 		  "width": "1080",
 		  "height": "720",
       },
       {
-          "author": "MHD", 
-          "description": "Beskrivelse", 
+          "author": "MHD",
+          "description": "Beskrivelse",
           "src": "http://flab.dk/~mads/sl2012/info/imgtest/720/IMG_0209.jpg",
 		  "width": "480",
 		  "height": "720",
       },
       {
-          "author": "MHD", 
-          "description": "Beskrivelse", 
+          "author": "MHD",
+          "description": "Beskrivelse",
           "src": "http://flab.dk/~mads/sl2012/info/imgtest/720/IMG_0323.jpg",
 		  "width": "1080",
 		  "height": "720",
       },
       {
-          "author": "MHD", 
-          "description": "Beskrivelse", 
+          "author": "MHD",
+          "description": "Beskrivelse",
           "src": "http://flab.dk/~mads/sl2012/info/imgtest/720/IMG_1073.jpg",
 		  "width": "1080",
 		  "height": "720",
       },
       {
-          "author": "MHD", 
-          "description": "Beskrivelse", 
+          "author": "MHD",
+          "description": "Beskrivelse",
           "src": "http://flab.dk/~mads/sl2012/info/imgtest/720/IMG_1141.jpg",
 		  "width": "1080",
 		  "height": "720",
       },
   ];
-	
+
 	// clear out previous content
 	$content = $('#content');
 	$content.empty();
-	
+
 	// setup the slideshow container
 	$content.append('<div id="slideshow" />');
 	$imgcontainer = $('#slideshow');
@@ -71,13 +71,13 @@ function startSlideshow(){
 	// populate the container
 	for(var i = 0; i < images.length; i++){
 		img = images[i];
-		
+
 		// calculate how much to offset the image with to have et center vertically
 		var m_top = ($('#content').height() - img.height)/2;
-		
+
 		// setup the outer div that will give us the horizontal alignment
 		$div = $('<div></div>').attr('class', 'slideshowimgcontainer');
-		
+
 		// setup the image with its properties and append it to the div and container
 		$img = $('<img></img>')
 					 .attr({
@@ -90,8 +90,8 @@ function startSlideshow(){
 		$div.append($img);
 		$imgcontainer.append($div);
 	}
-	
-	// start the slideshow 
+
+	// start the slideshow
 	$imgcontainer.cycle();
 }
 
@@ -116,13 +116,9 @@ $(document).ready(function() {
 <body>
 	<div id="horizon">
 				<div id="canvas">
-					<div id="content">content</div>
-					<div id="clock">13:37:00</div>
-					<div id="ticker">
-						<ul id="js-news">
-							<li>SL2012</li>
-						</ul>
-					</div>
+					<div id="content" />
+					<div id="clock" />
+					<div id="ticker" />
 				</div>
 			</div>
 			</body>
