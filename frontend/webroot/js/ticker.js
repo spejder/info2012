@@ -6,7 +6,7 @@
  */
 (function() {
 
-    var news_items = ["SL2012","SL2012","SL2012","SL2012","SL2012","SL2012","SL2012","SL2012","SL2012","SL2012"];
+    var news_items = [];
     var log_debug = console && console.log ? function(msg) { console.log.apply(console, [msg]); } : function() { };
 
     //Subscribe to news feed
