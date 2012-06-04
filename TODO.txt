@@ -1,0 +1,5 @@
+- Lav grafik om til at kunne have et billede i 4:3 format (som normalt 35 mm)
+- Lur hvordan skærmen skal se ud som default
+- Lav grafik generator
+- Få uret til at stå pænere (så det ikke rykker frem og tilbage alt efter ciffer) - passende padding eller fixed-width
+
