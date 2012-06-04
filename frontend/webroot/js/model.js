@@ -31,9 +31,9 @@
     }
 
 	window.feed_fetch_data = function() {
-		
+
 		feed_proxy.fetch(function(data) {
-		
+
 			//Feed proxy can return false if content fetch failed
 			if (data) {
 				if (cache) {
@@ -47,10 +47,10 @@
 					notify(news_subscribers, data);
 					notify(mode_subscribers, data);
 				}
-				
+
 				//Update cache
 				cache = data;
-			} 
+			}
 		});
     }
 
@@ -69,5 +69,5 @@
 
     //Run fetch at document load
     $(setInterval(window.feed_fetch_data, 5000));
-    
+
 })();

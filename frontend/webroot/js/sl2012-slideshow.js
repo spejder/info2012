@@ -35,7 +35,7 @@
                 src: img.src,
                 alt: img.description
                 });
-        //$img.css('marginTop', m_top);
+        $img.css('marginTop', m_top);
         $div.append($img);
 
         // add caption

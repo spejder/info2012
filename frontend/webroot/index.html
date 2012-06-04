@@ -21,112 +21,18 @@
 <!-- image cycler start -->
 <script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
 <script type="text/javascript" src="js/info2012-slideshow.js"></script>
-<!-- TODO move this into its own file -->
-<script type="text/javascript">
-function startSlideshow(){
-
-	// find the contents...
-	var images = [
-      {
-          "author": "MHD",
-          "description": "Beskrivelse 1 <br/><a href=\"bla\">hithere</a>",
-          "src": "http://flab.dk/~mads/sl2012/info/imgtest/720/IMG_0204.jpg",
-		  "width": "1080",
-		  "height": "720",
-      },
-      {
-          "author": "MHD",
-          "description": "Beskrivelse 2",
-          "src": "http://flab.dk/~mads/sl2012/info/imgtest/720/IMG_0209.jpg",
-		  "width": "480",
-		  "height": "720",
-      },
-      {
-          "author": "MHD",
-          "description": "Beskrivelse 3",
-          "src": "http://flab.dk/~mads/sl2012/info/imgtest/720/IMG_0323.jpg",
-		  "width": "1080",
-		  "height": "720",
-      },
-      {
-          "author": "MHD",
-          "description": "Beskrivelse 4",
-          "src": "http://flab.dk/~mads/sl2012/info/imgtest/720/IMG_1073.jpg",
-		  "width": "1080",
-		  "height": "720",
-      },
-      {
-          "author": "MHD",
-          "description": "Beskrivelse 5",
-          "src": "http://flab.dk/~mads/sl2012/info/imgtest/720/IMG_1141.jpg",
-		  "width": "1080",
-		  "height": "720",
-      },
-  ];
-
-	// clear out previous content
-	$content = $('#picture');
-	$content.empty();
-
-	// setup the slideshow container
-	$content.append('<div id="slideshow" />');
-	$imgcontainer = $('#slideshow');
-
-	// populate the container
-	for(var i = 0; i < images.length; i++){
-		img = images[i];
-
-		// calculate how much to offset the image with to have it center vertically
-		var m_top = ($('#picture').height() - img.height)/2;
-
-		// setup the outer div that will give us the horizontal alignment
-		$div = $('<div></div>').attr('class', 'slideshowimgcontainer');
-
-		// setup the image with its properties and append it to the div and container
-		$img = $('<img></img>')
-					 .attr({
-						width: img.width,
-						height: img.height,
-						src: img.src,
-						alt: img.description
-						});
-		//$img.css('marginTop', m_top);
-		$div.append($img);
-
-    // add caption
-    //
-    $cap = $('<div></div>').html(img.description);
-    $cap.addClass('caption');
-    $div.append($cap);
-
-
-		$imgcontainer.append($div);
-	}
-
-	// start the slideshow
-	$imgcontainer.cycle({
-    after: onAfter
-  });
-}
-
-function onAfter(curr, next, opts) {
-    var caption = $(next).find('.caption').html();
-    $('#bodytext').html(caption);
-}
-
-$(document).ready(function() {
-	startSlideshow();
-});
-</script>
-<!-- image cycler end -->
 <!-- Begin of Ticker Includes -->
     <script type="text/javascript" src="js/jquery.li-scroller.js"></script>
     <script type="text/javascript" src="js/model.js"></script>
-    <script type="text/javascript" src="js/feed_proxy_stub.js"></script>
+    <script type="text/javascript" src="js/feed_proxy_impl.js"></script>
+
+
 
     <script type="text/javascript" src="js/ticker.js"></script>
     <link rel="stylesheet" href="css/li-scroller.css" media="screen" />
 <!-- End of Ticker Includes -->
+
+    <script type="text/javascript" src="js/sl2012-slideshow.js"></script>
 
 
 
