@@ -1,0 +1,4 @@
+name = "SL2012 infoscreen"
+description = "Backend system for sl2012 infoscreen"
+core = "7.x"
+package = SL2012

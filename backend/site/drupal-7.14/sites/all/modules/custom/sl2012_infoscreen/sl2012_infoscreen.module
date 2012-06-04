@@ -1,0 +1,92 @@
+<?php
+/**
+ * Implementation of hook_menu().
+ */
+function sl2012_infoscreen_menu() {
+  $items['info'] = array(
+    'title' => 'sl2012 info callback',
+    'page callback' => 'sl2012_infoscreen_callback',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+  dd("hook_menu invoked");
+
+  return $items;
+}
+
+
+function sl2012_get_tickets(){
+  // TODO - put in configuration
+
+  $queue = nodequeue_load_queue_by_name('tickets');
+  $nodes = nodequeue_load_nodes($queue->qid);
+
+  $tickets = array();
+  foreach($nodes as $node){
+    $body = field_get_items('node', $node, 'field_body');
+    array_push($tickets, $node->title . ": " . $body[0]['value']);
+  }
+
+  return $tickets;
+}
+
+function sl2012_get_images(){
+
+  $queue = nodequeue_load_queue_by_name('slideshow');
+  $album_nodes = nodequeue_load_nodes($queue->qid);
+
+  $return_images = array();
+  // load each album in order, add images from each album to the image list
+  foreach($album_nodes as $album_node){
+    //TODO fail terrible if the node is not an album
+    $wrapper = entity_metadata_wrapper('node', $album_node);
+
+    $album_images = field_get_items('node', $album_node, 'field_images2');
+    foreach($album_images as $image_entity) {
+            $image = field_collection_field_get_entity($image_entity);
+
+            if(isset($image->field_image2['und'])){
+              $filename = $image->field_image2['und'][0]['filename'];
+              $image_uri = file_build_uri($filename);
+              $src = image_style_url('1080p', $image_uri);
+            }else{
+              $src = '';
+            }
+
+            // TODO add fields to the database and do this calculcation when adding the images
+            $imagesize = getimagesize($src);
+
+            $description = isset($image->field_description['und']) ? $image->field_description['und'][0]['safe_value'] : '';
+
+
+            array_push($return_images, array(
+              'byline' => isset($image->field_byline['und']) ? $image->field_byline['und'][0]['safe_value'] : '',
+              'description' => nl2br($description),
+              'src' => $src,
+              'width' => $imagesize[0],
+              'height' => $imagesize[1],
+              )
+            );
+    }
+  }
+ return $return_images;
+}
+
+function sl2012_infoscreen_callback(){
+  $news = sl2012_get_tickets();
+  $images = sl2012_get_images();
+  $video = array();
+
+
+  $output = array('images' => $images,
+                  'news' => $news,
+                  'video' => $video,
+                  'mode' => 'duno'
+                  );
+
+
+
+  drupal_json_output($output);
+
+}
+

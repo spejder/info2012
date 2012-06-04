@@ -1,3 +1,5 @@
+ Header set Access-Control-Allow-Origin "*"
+ 
 #
 # Apache/PHP/Drupal settings:
 #
