@@ -5,8 +5,8 @@ var feed_proxy = {
 				// as the infoscreen site - or the server hosting the url below must
 				// send a HTTP header along the lines
 				// Access-Control-Allow-Origin: *
-				url: "https://dev.dds.dk/info2012.json",
-				// url: "http://infobackend.dev/info",
+				// url: "https://dev.dds.dk/info2012.json",
+				url: "http://infobackend.dev/info",
 				dataType: "json",
 				crossDomain: true,
 				success: function(data, textStatus, xhr) {

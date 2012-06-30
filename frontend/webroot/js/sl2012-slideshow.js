@@ -22,7 +22,10 @@
         img = images[i];
 
         // calculate how much to offset the image with to have it center vertically
-        var m_top = ($('#picture').height() - img.height)/2;
+        //var m_top = ($('#picture').height() - img.height)/2;
+        var img_ratio = img.width / img.height;
+
+        var m_left = 0 - ((($('#picture').height() * img_ratio)) - $('#picture').width())/2;
 
         // setup the outer div that will give us the horizontal alignment
         $div = $('<div></div>').attr('class', 'slideshowimgcontainer');
@@ -30,19 +33,26 @@
         // setup the image with its properties and append it to the div and container
         $img = $('<img></img>')
                .attr({
-                width: img.width,
-                height: img.height,
+                // width: img.width,
+                // height: img.height,
                 src: img.src,
-                alt: img.description
+                alt: img.caption
                 });
-        $img.css('marginTop', m_top);
+       // $img.css('marginTop', m_top);
+       //
+        // center the image
+        $img.css('marginLeft', m_left);
         $div.append($img);
 
         // add caption
-        //
-        $cap = $('<div></div>').html(img.description);
+        $cap = $('<div></div>').html(img.caption);
         $cap.addClass('caption');
         $div.append($cap);
+
+        // add byline
+        $byline = $('<div></div>').html(img.byline);
+        $byline.addClass('byline');
+        $div.append($byline);
 
 
         $imgcontainer.append($div);
@@ -52,7 +62,24 @@
       $imgcontainer.cycle({
         after: function onAfter(curr, next, opts) {
                  var caption = $(next).find('.caption').html();
+                 var byline = $(next).find('.byline').html();
+
                  $('#bodytext').html(caption);
+
+                 if(byline.length > 0){
+                  $('#byline').html('<b>Foto:</b> ' + byline);
+                 }else{
+                  $('#byline').html('');
+                 }
+
+                 $('#bodytext').ellipsis();
+
+
+                 // update fonts
+                 Cufon.refresh('#bodytext');
+                 Cufon.refresh('#byline');
+
+                 $('#bodytext').ellipsis();
                 }
       });
     }

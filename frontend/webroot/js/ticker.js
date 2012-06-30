@@ -22,6 +22,7 @@
             }
 
             log_debug("Newsticker re-render");
+            Cufon.refresh('#js-news');
         }});
     });
 })();

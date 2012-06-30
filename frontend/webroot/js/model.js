@@ -46,6 +46,9 @@
 					notify(video_subscribers, data);
 					notify(news_subscribers, data);
 					notify(mode_subscribers, data);
+
+                    // fixup fonts
+                    Cufon.refresh();
 				}
 
 				//Update cache
