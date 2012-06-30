@@ -67,7 +67,7 @@ function sl2012_infoscreen_fe_nodequeue_export_fields() {
 function sl2012_infoscreen_image_default_styles() {
   $styles = array();
 
-  // Exported image style: 1080p
+  // Exported image style: 1080p.
   $styles['1080p'] = array(
     'name' => '1080p',
     'effects' => array(
@@ -81,8 +81,8 @@ function sl2012_infoscreen_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => '1144',
-          'height' => '763',
+          'width' => '1200',
+          'height' => '800',
           'upscale' => 0,
         ),
         'weight' => '2',
