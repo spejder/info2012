@@ -134,10 +134,6 @@ function sl2012_infoscreen_form_album_node_form_alter(&$form, &$form_state, $for
 
   // Attach our own submit callback.
   array_push($form['actions']['submit']['#submit'], 'sl2012_infoscreen_form_album_node_submit');
-   dpm($form);
-
-
-
 }
 
 /**
