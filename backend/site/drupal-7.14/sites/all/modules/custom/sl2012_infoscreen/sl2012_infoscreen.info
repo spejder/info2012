@@ -34,3 +34,5 @@ features[field][] = node-ticket-field_date
 features[image][] = 1080p
 features[node][] = album
 features[node][] = ticket
+features[user_role][] = contributor
+features[user_role][] = editor
