@@ -20,7 +20,6 @@ dependencies[] = nodequeue
 dependencies[] = overlay
 dependencies[] = plup
 dependencies[] = plupload
-dependencies[] = seven
 dependencies[] = shortcut
 dependencies[] = toolbar
 dependencies[] = views

@@ -1,0 +1,58 @@
+<?php
+
+function sl2012_infoscreen(){
+  $shortcuts_to_be_added = array(
+    array(
+      'link_path' => 'node/add/album',
+      'link_title' => t('Add Album'),
+    ),
+    array(
+      'link_path' => 'node/add/ticket',
+      'link_title' => t('Add News'),
+    ),
+    array(
+      'link_path' => 'admin/structure/nodequeue/' . $slideshow_queue->qid . '/view',
+      'link_title' => t('View Slideshow Queue'),
+    ),
+    array(
+      'link_path' => 'admin/structure/nodequeue/' . $tickets_queue->qid . '/view',
+      'link_title' => t('View News Queue'),
+    ),
+  );
+
+  sl2012_infoscreen_update_shortcuts($shortcuts_to_be_added);
+
+  variable_set('theme_default', 'seven');
+
+}
+
+function sl2012_infoscreen_update_shortcuts($shortcuts_to_be_added){
+  $default_shortcuts = shortcut_default_set();
+
+  // add shortcuts
+  if(isset($default_shortcuts->links) && count($default_shortcuts->links) > 0){
+    $link_paths = array();
+    $next_weight = $default_shortcuts->links[0]['weight'];
+
+    // find all paths and note down the biggest weight
+    foreach($default_shortcuts->links as $link){
+      array_push($link_paths, $link['link_path']);
+      if($link['weight'] > $next_weight){
+        $next_weight = $link['weight'];
+      }
+    }
+
+    // check that all "our" shortcuts where in the default set - if not add them
+    $dirty = false;
+    foreach($shortcuts_to_be_added as $new_shortcut){
+      if(!in_array($new_shortcut['link_path'], $link_paths)){
+        $new_shortcut['weight'] = ++$next_weight;
+        array_push($default_shortcuts->links, $new_shortcut);
+        $dirty = true;
+      }
+    }
+    if($dirty){
+      shortcut_set_save($default_shortcuts);
+    }
+  }
+}
