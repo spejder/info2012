@@ -85,7 +85,36 @@ function sl2012_infoscreen_image_default_styles() {
           'height' => '800',
           'upscale' => 0,
         ),
-        'weight' => '2',
+        'weight' => '-10',
+      ),
+      3 => array(
+        'label' => 'Define canvas',
+        'help' => 'Define the size of the working canvas and background color, this controls the dimensions of the output image.',
+        'effect callback' => 'canvasactions_definecanvas_effect',
+        'dimensions callback' => 'canvasactions_definecanvas_dimensions',
+        'form callback' => 'canvasactions_definecanvas_form',
+        'summary theme' => 'canvasactions_definecanvas_summary',
+        'module' => 'imagecache_canvasactions',
+        'name' => 'canvasactions_definecanvas',
+        'data' => array(
+          'RGB' => array(
+            'HEX' => 'ffffff',
+          ),
+          'under' => 1,
+          'exact' => array(
+            'width' => '1200',
+            'height' => '800',
+            'xpos' => 'center',
+            'ypos' => 'center',
+          ),
+          'relative' => array(
+            'leftdiff' => '',
+            'rightdiff' => '',
+            'topdiff' => '',
+            'bottomdiff' => '',
+          ),
+        ),
+        'weight' => '-9',
       ),
     ),
   );
