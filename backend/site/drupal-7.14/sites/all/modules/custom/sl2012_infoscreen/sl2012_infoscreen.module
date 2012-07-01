@@ -108,9 +108,12 @@ function sl2012_infoscreen_callback() {
  */
 function sl2012_infoscreen_form_album_node_form_alter(&$form, &$form_state, $form_id) {
 
+  $slideshow_queue = nodequeue_load_queue_by_name('slideshow');
+  $tickets_queue = nodequeue_load_queue_by_name('tickets');
+
   $form['bulk_image_add'] = array(
     '#type' => 'fieldset',
-    '#title' => t('Bulk add images'),
+    '#title' => t('Tilføj billeder'),
     '#tree' => TRUE,
     '#weight' => $form['title']['#weight'],
   );
@@ -120,20 +123,27 @@ function sl2012_infoscreen_form_album_node_form_alter(&$form, &$form_state, $for
 
   $form['bulk_image_add']['bulk_images'] = array(
     '#type' => 'plupload',
-    '#title' => t('Upload files'),
-    '#description' => t('Default text that should be used if the image does not contain a description'),
+    '#title' => t('Billeder'),
+    '#description' => t('Billeder der skal tilføjes til albummet'),
   );
 
   $form['bulk_image_add']['description'] = array(
     '#type' => 'textarea',
-    '#title' => t('Description'),
+    '#title' => t('Gennemtving beskrivelse'),
     '#cols' => 60,
     '#rows' => 5,
-    '#description' => t('Default text that should be used if the image does not contain a description'),
+    '#description' => t('(OBS: overskriver eventuelle beskrivelser i originalbilleder)'),
   );
 
   // Attach our own submit callback.
   array_push($form['actions']['submit']['#submit'], 'sl2012_infoscreen_form_album_node_submit');
+
+  // kill the default field-collections form if no images has been attached yet
+  $node = $form_state['node'];
+
+  if(!isset($node->field_images) || count($node->field_images[LANGUAGE_NONE]) == 0 ){
+    unset($form['field_images']);
+  }
 }
 
 /**

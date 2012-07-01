@@ -377,7 +377,7 @@ function sl2012_infoscreen_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_images',
-      'label' => 'Images',
+      'label' => 'Administrer billeder',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -616,6 +616,7 @@ function sl2012_infoscreen_field_default_fields() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Administrer billeder');
   t('Album image');
   t('Body');
   t('Byline');
@@ -623,7 +624,6 @@ function sl2012_infoscreen_field_default_fields() {
   t('Date');
   t('Description');
   t('Image');
-  t('Images');
 
   return $fields;
 }
