@@ -1,6 +1,6 @@
 <?php
 
-function sl2012_infoscreen(){
+function sl2012_infoscreen_install(){
   $shortcuts_to_be_added = array(
     array(
       'link_path' => 'node/add/album',
