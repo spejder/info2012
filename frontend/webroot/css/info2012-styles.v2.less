@@ -13,42 +13,6 @@
 
 @background: "../gfx/info2012_background_1080.png";
 
-// default
-@media screen{
-  body{
-    font-size:10px;
-  }
-  #canvas{
-    margin-left: -@width_min/2;
-    top: -@height_min/2;
-    width: @width_min;
-    height: @height_min;
-  }
-}
-
-@media screen and (min-height: 720px){
- body{
-    font-size:11px;
-  }
-  #canvas{
-    margin-left: -@width_720/2;
-    top: -@height_720/2;
-    width: @width_720;
-    height: @height_720;
-  }
-}
-
-@media screen and (min-height: 1080px){
- body{
-
-  }
-  #canvas{
-    margin-left: -@width_1080/2;
-    top: -@height_1080/2;
-    width: @width_1080;
-    height: @height_1080;
-  }
-}
 
 
 
@@ -87,13 +51,17 @@
       height: 10%;
       font-size: 450%;
       color: white;
+
+      ul, li{
+        height: 80%;
+      }
     }
 
     #clock{
       position: absolute;
       right:0.6%;
       top:1.3%;
-      height: 2 em;
+      height: 2em;
       font-size: 350%;
       font-weight: bold;
       font-family: 'Droid Sans Mono', sans-serif;
@@ -164,3 +132,60 @@
       margin: auto;
       display: block;
     }
+
+// default
+@media screen and (max-height: 719px){
+  body{
+    font-size:10px;
+  }
+  #canvas{
+    margin-left: -@width_min/2;
+    top: -@height_min/2;
+    width: @width_min;
+    height: @height_min;
+  }
+
+  #clock{
+    font-size: 28px;
+    right: 5px;
+    top: 8px;
+  }
+}
+
+@media screen and (min-height: 720px){
+ body{
+    font-size:11px;
+  }
+  #canvas{
+    margin-left: -@width_720/2;
+    top: -@height_720/2;
+    width: @width_720;
+    height: @height_720;
+  }
+}
+
+@media screen and (min-height: 1080px){
+ body{
+  font-size:15px;
+  }
+
+  #clock{
+    //font-size: 500%;
+  }
+
+  #bodytext{
+    font-size: 200%;
+  }
+
+  #byline{
+    font-size: 180%;
+  }
+
+  #canvas{
+    margin-left: -@width_1080/2;
+    top: -@height_1080/2;
+    width: @width_1080;
+    height: @height_1080;
+  }
+}
+
