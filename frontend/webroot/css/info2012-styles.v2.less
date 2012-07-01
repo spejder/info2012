@@ -13,19 +13,20 @@
 
 @background: "../gfx/info2012_background_1080.png";
 
-@media screen and (min-height: @height_1080) and (min-width: @width_1080) {
- body{
-
+// default
+@media screen{
+  body{
+    font-size:10px;
   }
   #canvas{
-    margin-left: -@width_1080/2;
-    top: -@height_1080/2;
-    width: @width_1080;
-    height: @height_1080;
+    margin-left: -@width_min/2;
+    top: -@height_min/2;
+    width: @width_min;
+    height: @height_min;
   }
 }
 
-@media screen and (min-height: @height_720) and (min-width: @width_720) {
+@media screen and (min-height: 720px){
  body{
     font-size:11px;
   }
@@ -37,16 +38,15 @@
   }
 }
 
+@media screen and (min-height: 1080px){
+ body{
 
-@media screen and (max-height: @height_720) and (max-width: @width_720){
-  body{
-    font-size:10px;
   }
   #canvas{
-    margin-left: -@width_min/2;
-    top: -@height_min/2;
-    width: @width_min;
-    height: @height_min;
+    margin-left: -@width_1080/2;
+    top: -@height_1080/2;
+    width: @width_1080;
+    height: @height_1080;
   }
 }
 
