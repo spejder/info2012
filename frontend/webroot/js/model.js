@@ -79,7 +79,7 @@
     var pageReload = function() { 
       log_debug("Reloading page...");
       window.location.reload();
-    });
+    };
     
     $(setInterval(pageReload, reloadFrequency));
 
