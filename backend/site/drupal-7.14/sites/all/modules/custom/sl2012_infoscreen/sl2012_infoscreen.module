@@ -115,10 +115,10 @@ function sl2012_infoscreen_form_album_node_form_alter(&$form, &$form_state, $for
     '#type' => 'fieldset',
     '#title' => t('Tilføj billeder'),
     '#tree' => TRUE,
-    '#weight' => $form['title']['#weight'],
+    '#weight' => $form['title']['#weight'] + 1,
   );
 
-  $form['title']['#weight'] = $form['title']['#weight'] - 1;
+//   $form['title']['#weight'] = $form['title']['#weight'] + 1;
 
 
   $form['bulk_image_add']['bulk_images'] = array(
