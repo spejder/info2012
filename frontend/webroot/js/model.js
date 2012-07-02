@@ -72,5 +72,15 @@
 
     //Run fetch at document load
     $(setInterval(window.feed_fetch_data, 5000));
+    
+    //Reload page every 30 minutes
+    var reloadFrequency = 30 * 60 * 1000;
+    
+    var pageReload = function() { 
+      log_debug("Reloading page...");
+      window.location.reload();
+    };
+    
+    $(setInterval(pageReload, reloadFrequency));
 
 })();
