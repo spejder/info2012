@@ -1,5 +1,19 @@
-- Lav grafik om til at kunne have et billede i 4:3 format (som normalt 35 mm)
-- Lur hvordan skærmen skal se ud som default
+- Lav test med
+  * ipad
+  * TV 720P
+  * TV 1080P
 - Lav grafik generator
-- Få uret til at stå pænere (så det ikke rykker frem og tilbage alt efter ciffer) - passende padding eller fixed-width
+- Opsæt standard brugere og roller og dump til sql
+- Understøt en test-kø
 
+
+- Understøt video
+  * generaliser json til at vise "albums" hvor et album så kan være af typen image eller video
+  * generaliser javascript afspilleren så den afspiller et album ad gangen og kalder en delegate hver gang et album er færdig. Ved afslutninge af albummet undersøges der også om der er kommet nyt
+
+- Forbered noget der kan lave et reboot med et interval - f.eks. hver 4. time
+
+
+Johan
+- wifi
+- diverse tweaks
