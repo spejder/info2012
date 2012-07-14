@@ -12,17 +12,16 @@
     //Subscribe to news feed
     feed_subscribe_news(function() {
         news_items = this.news;
-        log_debug("Newsticker content-cache updated!");
-    });
-
-    $(function() { $("#js-news").liScroll({ updatehook: function() {
-            $("#js-news").html('');
+        $(".ticker").html('');
             for (var item in news_items) {
-                $("#js-news").append('<li>'+ news_items[item]+ '</li>');
+                $(".ticker").append('<p>'+ news_items[item]+ '</p>');
             }
 
             log_debug("Newsticker re-render");
-            Cufon.refresh('#js-news');
-        }});
+        Cufon.refresh('.ticker');
+        $('marquee').marquee('ticker');
+        log_debug("Newsticker content-cache updated!");
     });
+
+
 })();

@@ -6,42 +6,35 @@
   var images = [];
    var log_debug = console && console.log ? function(msg) { console.log.apply(console, [msg]); } : function() { };
 
+   // hack for now that it is attached to the window
+  window.playPhotoAlbum = function playPhotoAlbum(images, callback){
 
-  var updateSlideshow = function updateSlideshow(images){
-      log_debug("updating slideshow");
+      log_debug("playing photo album");
+
       // clear out previous content
-      $content = $('#picture');
+      $content = $('#mediacanvas');
       $content.empty();
 
       // setup the slideshow container
       $content.append('<div id="slideshow" />');
+
       $imgcontainer = $('#slideshow');
+      $imgcontainer.hide();
 
       // populate the container
-      for(var i = 0; i < images.length; i++){
-        img = images[i];
-
-        // calculate how much to offset the image with to have it center vertically
-        //var m_top = ($('#picture').height() - img.height)/2;
-        var img_ratio = img.width / img.height;
-
-        var m_left = 0 - ((($('#picture').height() * img_ratio)) - $('#picture').width())/2;
+      for(var i = 0; i < images.content.length; i++){
+        img = images.content[i];
 
         // setup the outer div that will give us the horizontal alignment
-        $div = $('<div></div>').attr('class', 'slideshowimgcontainer');
+        $div = $('<div></div>');
 
         // setup the image with its properties and append it to the div and container
         $img = $('<img></img>')
                .attr({
-                // width: img.width,
-                // height: img.height,
                 src: img.src,
                 alt: img.caption
                 });
-       // $img.css('marginTop', m_top);
-       //
-        // center the image
-        $img.css('marginLeft', m_left);
+
         $div.append($img);
 
         // add caption
@@ -54,46 +47,58 @@
         $byline.addClass('byline');
         $div.append($byline);
 
-
         $imgcontainer.append($div);
       }
 
+      // hide all images
+      $('#slideshow > div').hide();
+      // show the first one
+      $('#slideshow > div:first').show();
+
+      // then let the container show
+      $imgcontainer.show();
+
       // start the slideshow
-      $imgcontainer.cycle({
-        after: function onAfter(curr, next, opts) {
-                 var caption = $(next).find('.caption').html();
-                 var byline = $(next).find('.byline').html();
+        console.log("photo: fadeout + start");
+        jQuery(".mediacurtain").fadeOut(2000,function(){
+          $imgcontainer.cycle({
+            after: function onAfter(curr, next, opts) {
+                      // Todo - prerender this with cufon and show()/hide()
+                      // function that updates the caption and byline
+                     var caption = $(next).find('.caption').html();
+                     var byline = $(next).find('.byline').html();
 
-                 $('#bodytext').html(caption);
+                     $('#bodytext').html(caption);
 
-                 if(byline.length > 0){
-                  $('#byline').html('<b>Foto:</b> ' + byline);
-                 }else{
-                  $('#byline').html('');
-                 }
+                     if(byline.length > 0){
+                      $('#byline').html('<b>Foto:</b> ' + byline);
+                     }else{
+                      $('#byline').html('');
+                     }
 
-                 $('#bodytext').ellipsis();
+                     $('#bodytext').ellipsis();
+
+                     // update fonts
+                     Cufon.refresh('#text-container');
+                    },
+            nowrap: true,
+            end: function wrapupSlideshow(options){
+              console.log("photo: fading out and invoking callback");
+              jQuery(".mediacurtain").fadeIn(2000, callback);
+              $('#byline').html('');
+              $('#bodytext').html('');
+            }
+          })});
+
+    };
+
+  //TODO: Subscribe to image feed
+
+//    feed_subscribe_images(function() {
+//        updateSlideshow(this.images);
+//        log_debug("Slideshow content fetched");
+//    });
 
 
-                 // update fonts
-                 Cufon.refresh('#bodytext');
-                 Cufon.refresh('#byline');
-
-                 $('#bodytext').ellipsis();
-                }
-      });
-    }
-
-  //Subscribe to image feed
-    feed_subscribe_images(function() {
-        updateSlideshow(this.images);
-        log_debug("Slideshow content fetched");
-    });
-
-  // startup
-  $(document).ready(function() {
-    log_debug("Slideshow doc ready invoked");
-    updateSlideshow([]);
-  });
 
 })();
