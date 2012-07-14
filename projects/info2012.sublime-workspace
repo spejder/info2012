@@ -1,0 +1,1286 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"unl",
+				"unloadPlayerStep1"
+			],
+			[
+				"background-",
+				"background-color"
+			],
+			[
+				"background",
+				"background-size"
+			],
+			[
+				"ph",
+				"phone_number"
+			],
+			[
+				"def",
+				"default_value"
+			],
+			[
+				"current",
+				"current_path"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"get_def",
+				"get_defined_vars"
+			],
+			[
+				"taxon",
+				"taxonomy_term"
+			],
+			[
+				"$ad",
+				"$advisor_category"
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"$ma",
+				"$mag_height"
+			],
+			[
+				"vi",
+				"view-filters"
+			],
+			[
+				"get_defin",
+				"get_defined_vars"
+			],
+			[
+				"ajax",
+				"ajaxifyQuizForm"
+			],
+			[
+				"quiz",
+				"quiznlform"
+			],
+			[
+				"t",
+				"type  (function)"
+			],
+			[
+				"summary",
+				"summary_panel_pane"
+			],
+			[
+				"samvirke_q",
+				"samvirke_quiz_block"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"frontpage-link",
+				"frontpage-link-block"
+			],
+			[
+				"array_shif",
+				"array_shift"
+			],
+			[
+				"sam",
+				"samvirke-counter-wrapper"
+			],
+			[
+				"$repo",
+				"$repo_info"
+			],
+			[
+				"$rev",
+				"$revspec"
+			],
+			[
+				"quiz-star-ali",
+				"quiz-star-aligner2"
+			],
+			[
+				"imagecache_article_",
+				"imagecache_article_insert_full"
+			],
+			[
+				"ob_end",
+				"ob_end_clean"
+			],
+			[
+				"_reload",
+				"_reload_deploy_save_alias"
+			],
+			[
+				"site",
+				"site_alias"
+			],
+			[
+				"plat",
+				"platform_destination"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/mads/Work/sl2012/info2012/frontend/webroot/index-v3.html",
+			"settings":
+			{
+				"buffer_size": 3643,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/mads/Work/sl2012/info2012/frontend/webroot/css/info2012-styles.v3.less",
+			"settings":
+			{
+				"buffer_size": 3377,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/mads/Work/sl2012/info2012/frontend/webroot/js/video-slider.js",
+			"settings":
+			{
+				"buffer_size": 3461,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "callback invoked \nplaying 0: B_cBAiZh1zE \nplaying 1: oquGdcq9PbE\nno more videoes \nunloading player\nplayback completed ",
+			"settings":
+			{
+				"buffer_size": 118,
+				"line_ending": "Unix",
+				"name": "callback invoked"
+			}
+		}
+	],
+	"build_system": "Packages/User/DrupalCodingStandard.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"discover ",
+				"Package Control: Discover Packages"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/mads/Work/sl2012/info2012/TODO.txt",
+		"/Users/mads/Work/sl2012/info2012/projects/info2012.sublime-project",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/javascript/general.js",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/modules/contrib/panels/panels_ipe/plugins/display_renderers/panels_renderer_ipe.class.php",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/modules/scl_frontpage/scl_frontpage.pages_default.inc",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/sass/advice-node.scss",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/sass/activity-node.scss",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/sass/mobile.scss",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/modules/scl_activity/scl_activity.panels_default.inc",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/modules/contrib/panels/plugins/layouts/threecol_25_50_25/threecol_25_50_25.css",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/modules/contrib/panels/plugins/layouts/twocol/twocol.css",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/sass/employee.scss",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/templates/views-view-fields--panel-pane-employees.tpl.php",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/modules/scl_base/scl_base.info",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/modules/scl_base/scl_base.features.user_permission.inc",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/modules/scl_search/scl_search.module",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/sass/advisor.scss",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/sclerosis.make",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/modules/scl_employee/scl_employee.module",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/sass/social.scss",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/modules/scl_base/scl_base.module",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/skleroza.info",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/sass/layout.scss",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/sass/advice.scss",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/sass/form.scss",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/sass/ie.scss",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/sass/activity.scss",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/modules/scl_search/plugins/content_types/sclsearchform/sclsearchform.inc",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/templates/ds-1col--user-user-user-teaser.tpl.php",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/sass/node.scss",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/templates/ds-1col--node.tpl.php",
+		"/Users/mads/Work/sl2012/info2012/frontend/webroot/layout.v2.html",
+		"/Users/mads/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/modules/scl_advice/scl_advice.pages_default.inc",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/modules/scl_advice/scl_advice.views_default.inc",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/templates/ds-1col--node-advice-search-result.tpl.php",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/templates/ds-1col--node-advice-teaser.tpl.php",
+		"/Users/mads/Work/sl2012/info2012/backend/site/drupal-7.14/sites/default/settings.php",
+		"/Users/mads/Library/Application Support/Sublime Text 2/Packages/User/phpcs.sublime-settings",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/templates/ds-1col--node-activity-teaser.tpl.php",
+		"/Users/mads/Work/Reload/Noter/organic-groups-scl.md",
+		"/Users/mads/Work/Reload/Noter/organic-groups-scl.txt",
+		"/Users/mads/Library/Application Support/Sublime Text 2/Packages/Phpcs/phpcs.sublime-settings",
+		"/etc/php.ini",
+		"/Users/mads/Downloads/junk/SL2012_Mads/CurrentVersion.fcpproject",
+		"/Users/mads/Work/sl2012/info2012/backend/site/drupal-7.14/sites/all/modules/field_collection/field_collection.test",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/templates/ds-1col--node-advisor-teaser.tpl.php",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/sass/menu.scss",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/sass/_base.scss",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/template.php",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/modules/scl_widgets/scl_widgets.strongarm.inc",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/modules/scl_widgets/scl_widgets.info",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/templates/ds-1col--fieldable-panels-pane-videobox-full.tpl.php",
+		"/Users/mads/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/mads/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/modules/scl_widgets/scl_widgets.ds.inc",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/javascript/jquery.oembed.js",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/includes/database/schema.inc",
+		"/private/etc/apache2/vhosts/001-vhost_alias.conf",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/templates/ds-1col--fieldable-panels-pane-temabox.tpl.php",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/modules/contrib/panels_everywhere/plugins/arguments/page_content.inc",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/modules/scl_widgets/scl_widgets.module",
+		"/Users/mads/Desktop/is_dsa.pub",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/modules/scl_search/scl_search.features.inc",
+		"/Users/mads/.drush/aliases.drushrc.p",
+		"/Users/mads/.drush/aliases.drushrc.php",
+		"/Users/mads/.drush/aliases.drushrc.priv.php",
+		"/Users/mads/.drush/aliases.drushrc.local.php",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/templates/ds-1col--node-activity-compact-list-view.tpl.php",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/sass/news-node.scss",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/sass/search-api.scss",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/templates/ds-1col--node-news-teaser.tpl.php",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/images/icons/magnifyingglass.png",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/sclerosis.info",
+		"/Users/mads/VirtualBox VMs/IE9/IE9.vbox",
+		"/Users/mads/VirtualBox VMs/IE7/IE7.vbox",
+		"/Users/mads/VirtualBox VMs/IE8/IE8.vbox",
+		"/Users/mads/VirtualBox VMs/IE7/Windows Vista.vhd",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/sass/screen.scss",
+		"/Users/mads/.drush/sclerosis.aliases.drushrc.php",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/sites/all/drush/tasks/tasks.php",
+		"/Users/mads/Dropbox/Todo/todo.txt",
+		"/Users/mads/.bash_profile",
+		"/Users/mads/.drush/drush_bashrc",
+		"/Users/mads/.drush/drush.bashrc",
+		"/Users/mads/.drush.bashrc",
+		"/Users/mads/Library/Application Support/Sublime Text 2/Packages/SublimeCodeIntel/Default (OSX).sublime-keymap",
+		"/Users/mads/Library/Application Support/Sublime Text 2/Packages/SublimeCodeIntel/Base File.sublime-settings",
+		"/Users/mads/Work/Reload/Projekter/Scleroseforeningen/site/profiles/sclerosis/themes/skleroza/templates/ds-1col--node-news-frontpage-news.tpl.php",
+		"/Users/mads/Work/sl2012/info2012/backend/site/drupal-7.14/sites/all/modules/custom/sl2012_infoscreen/sl2012_infoscreen.module",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/modules/samvirke_quiz/quiz-ty-multichoice-report.tpl.php",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/modules/samvirke_quiz/samvirke_quiz.pages_default.inc",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/modules/samvirke_quiz/samvirke_quiz.module",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/themes/zammweerkeh/scripts/general.js",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/modules/contrib/quiz_ty/theme/quiz-ty-multichoice-report.tpl.php",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/themes/mmmzammweerkeh/js/general.js",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/modules/samvirke_quiz/quiz-ty-report.tpl.php",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/modules/contrib/quiz/includes/ajax_quiz/ajax_quiz.info",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/themes/zammweerkeh/css/views.css",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/themes/zammweerkeh/css/screen.css",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/modules/samvirke_quiz/samvirke_quiz.info",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/modules/samvirke_quiz/quiz-report-form.tpl.php",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/modules/samvirke_base/samvirke_base.module",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/themes/zammweerkeh/scripts/enable-fonts.js",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/modules/contrib/quiz_ty/quiz_ty.module",
+		"/Users/mads/.drush/al",
+		"/Users/mads/Work/sl2012/info2012/frontend/webroot/js/ticker.js",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/modules/contrib/views/handlers/views_handler_field_counter.inc",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/modules/insert_image_with_text/insert_image_with_text.module",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/modules/insert_image_with_text/insert_image_with_text.info",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/modules/samvirke_base/samvirke_base.install",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/modules/samvirke_quiz/samvirke_quiz.install",
+		"/Users/mads/Work/Reload/aegir/aegir-git-platform/provision_git_platform/git_platform.service.inc",
+		"/Users/mads/Work/Reload/aegir/aegir-git-platform/provision_git_platform/provision_git_platform.drush.inc",
+		"/Users/mads/www/test/fb-button.html",
+		"/Users/mads/www/test/star.html",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/themes/zammweerkeh/quiz-ty-report.tpl.php",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/modules/samvirke_subject_area/samvirke_subject_area.pages_default.inc",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/modules/samvirke_article/samvirke_article.info",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/modules/samvirke_custom_content/samvirke_custom_content.info",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/modules/samvirke_base/samvirke_base.info",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/themes/zammweerkeh/css/tinymce-content.css",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/modules/samvirke_custom_content/samvirke_custom_content.features.content.inc",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/modules/samvirke_custom_page/samvirke_custom_page.features.content.inc",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/modules/insert_image_with_text/insert-image-with-text-insert-image.tpl.php",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/modules/samvirke_article/samvirke_article.features.inc",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/modules/samvirke_flash_quiz/samvirke_flash_quiz.features.content.inc",
+		"/Users/mads/Work/Reload/Projekter/FDB-Samvirke/sites/all/modules/samvirke_hint/samvirke_hint.features.content.inc"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"updateplay",
+			"ytplay",
+			"onyoutubepla",
+			"div",
+			"id=",
+			"id",
+			"submit",
+			"panels-ipe-save",
+			"#panels-ipe-save",
+			"panels",
+			"10px",
+			"sprite-width",
+			"icon-sprite-width",
+			"scl_activity.panels_default.inc",
+			"ine containing tags, type, links for printing and sha",
+			"activity_info_line",
+			",",
+			".info-line",
+			"  ",
+			"            ",
+			"           ",
+			"          ",
+			"         ",
+			"        ",
+			"       ",
+			"      ",
+			"     ",
+			"    ",
+			"   ",
+			"  ",
+			"entity",
+			"facet",
+			"use text format filtered_text",
+			"info-lin",
+			"line",
+			"<p",
+			"span",
+			"<p",
+			"p",
+			"720",
+			"min",
+			"1080",
+			"px",
+			"font-s",
+			"position",
+			"width",
+			"min",
+			"720",
+			"canvas_width",
+			"canvas_height",
+			"oembed",
+			"clearfix",
+			"upload",
+			"size",
+			"$item",
+			"_scl_tmp_get_timestamp",
+			"$content['field_date']['#items'][0]",
+			"start",
+			"padding",
+			"add2home",
+			"temabox",
+			"fieldable_panels_pane-tematopbox-field_tematopbox_title",
+			"field_embed_url",
+			"video_url",
+			"oembedcore_oembed_data",
+			"cache_oe",
+			"oembedcore_render_cache",
+			"oembed_parse_attr",
+			"oembed_preg_tag_replace",
+			"wy",
+			"To prevent duplicate events",
+			"Drupal.behaviors.fillUserInfoFromCookie",
+			"Drupal.behaviors.fillUserInfoFromCookie ",
+			"local",
+			"solr",
+			"plupload_file_uri_to_object",
+			"file_save",
+			"submit",
+			"field_description",
+			"$description",
+			"width",
+			"ul",
+			"vhd",
+			"vista",
+			"title",
+			"pane-ti",
+			":before",
+			"d7",
+			"frontpage_news",
+			"fontdef2",
+			"tax",
+			"#quiz",
+			"ajaxi",
+			"trackpage('newsletter-signup'",
+			"form_alte",
+			"samvirke_quiz_form_alter",
+			"report_",
+			"ty",
+			"quiz-",
+			"field_",
+			"share-quiz-result-button",
+			"facebook",
+			"fb-send",
+			"quiz",
+			"draw_date",
+			"block",
+			"quiz-",
+			"facebook",
+			"emf-subscription-response",
+			"emfform",
+			"quiz",
+			"quis",
+			"quiz",
+			"quiz-star",
+			"quiz_star",
+			"quiz_questions",
+			"quiz_ty_report",
+			"quiz_report_form",
+			"url",
+			"webform",
+			"facebook-share-comment",
+			"samvirke_quiz_quiz_finished",
+			"face",
+			"viskalspise_recipes",
+			"possible",
+			"re-render",
+			"6048",
+			"counter"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/mads/Work/sl2012/info2012/frontend/webroot/index-v3.html",
+					"settings":
+					{
+						"buffer_size": 3643,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2727,
+								2727
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"text-indent": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 0.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"Python Django": "python"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 841.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/mads/Work/sl2012/info2012/frontend/webroot/css/info2012-styles.v3.less",
+					"settings":
+					{
+						"buffer_size": 3377,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2674,
+								2674
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"text-indent": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 0.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"Python Django": "python"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2196.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/mads/Work/sl2012/info2012/frontend/webroot/js/video-slider.js",
+					"settings":
+					{
+						"buffer_size": 3461,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								953,
+								953
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"text-indent": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 0.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"Python Django": "python"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 261.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"settings":
+					{
+						"buffer_size": 118,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								118,
+								118
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"auto_name": "callback invoked",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"text-indent": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 0.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"Python Django": "python"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"three",
+				"modules/contrib/panels/plugins/layouts/threecol_25_50_25/threecol_25_50_25.css"
+			],
+			[
+				"entity.views.inc",
+				"modules/contrib/entity/views/entity.views.inc"
+			],
+			[
+				"baseinfo",
+				"modules/scl_base/scl_base.info"
+			],
+			[
+				".make",
+				"sclerosis.make"
+			],
+			[
+				"panel_content",
+				"modules/contrib/panels_everywhere/plugins/arguments/page_content.inc"
+			],
+			[
+				"searfeain",
+				"modules/scl_search/scl_search.features.inc"
+			],
+			[
+				"newsnosc",
+				"profiles/sclerosis/themes/skleroza/sass/news-node.scss"
+			],
+			[
+				"ds-1col",
+				"profiles/sclerosis/themes/skleroza/templates/ds-1col--node-news-frontpage-news.tpl.php"
+			],
+			[
+				"quiz-ty-multichoice-report.tpl.php",
+				"modules/contrib/quiz_ty/theme/quiz-ty-multichoice-report.tpl.php"
+			],
+			[
+				"samvirke_quiz/samvirke_quiz.pages_default.inc",
+				"modules/samvirke_quiz/samvirke_quiz.pages_default.inc"
+			],
+			[
+				"samquimo",
+				"modules/samvirke_quiz/samvirke_quiz.module"
+			],
+			[
+				"genera",
+				"themes/zammweerkeh/scripts/general.js"
+			],
+			[
+				"general.js",
+				"themes/mmmzammweerkeh/js/general.js"
+			],
+			[
+				"samqinf",
+				"modules/samvirke_quiz/samvirke_quiz.info"
+			],
+			[
+				"modules/samvirke_quiz/quiz-ty-report.tpl.php",
+				"modules/samvirke_quiz/quiz-ty-report.tpl.php"
+			],
+			[
+				"modules/samvirke_quiz/quiz-report-form.tpl.php",
+				"modules/samvirke_quiz/quiz-report-form.tpl.php"
+			],
+			[
+				"genr",
+				"themes/mmmzammweerkeh/js/general.js"
+			],
+			[
+				"fontjs",
+				"themes/zammweerkeh/scripts/enable-fonts.js"
+			],
+			[
+				"scree",
+				"themes/zammweerkeh/css/screen.css"
+			],
+			[
+				"view",
+				"themes/zammweerkeh/css/views.css"
+			],
+			[
+				"samvirkebasemo",
+				"modules/samvirke_base/samvirke_base.module"
+			],
+			[
+				"enable-fon",
+				"themes/zammweerkeh/scripts/enable-fonts.js"
+			],
+			[
+				"screen.cs",
+				"themes/zammweerkeh/css/screen.css"
+			],
+			[
+				"viewscss",
+				"themes/zammweerkeh/css/views.css"
+			],
+			[
+				"quiz.module",
+				"modules/samvirke_quiz/samvirke_quiz.module"
+			],
+			[
+				"modules/contrib/quiz_ty/quiz_ty.module",
+				"modules/contrib/quiz_ty/quiz_ty.module"
+			],
+			[
+				"modules/samvirke_quiz/samvirke_quiz.module",
+				"modules/samvirke_quiz/samvirke_quiz.module"
+			],
+			[
+				"tyrepo",
+				"modules/samvirke_quiz/quiz-ty-report.tpl.php"
+			],
+			[
+				"samquimodu",
+				"modules/samvirke_quiz/samvirke_quiz.module"
+			],
+			[
+				"quizreportfor",
+				"modules/samvirke_quiz/quiz-report-form.tpl.php"
+			],
+			[
+				"zvie",
+				"themes/zammweerkeh/css/views.css"
+			],
+			[
+				"zscr",
+				"themes/zammweerkeh/css/screen.css"
+			],
+			[
+				"zammscreen.",
+				"themes/zammweerkeh/css/screen.css"
+			],
+			[
+				"amvirke_quiz.module",
+				"samvirke_quiz/samvirke_quiz.module"
+			],
+			[
+				"samvirke_quizinsta",
+				"modules/samvirke_quiz/samvirke_quiz.install"
+			],
+			[
+				"samvirkebaseinsta",
+				"modules/samvirke_base/samvirke_base.install"
+			],
+			[
+				"inserttextinf",
+				"modules/insert_image_with_text/insert_image_with_text.info"
+			],
+			[
+				"insert_image_with_text.module",
+				"modules/insert_image_with_text/insert_image_with_text.module"
+			],
+			[
+				"samvirbasinstall",
+				"modules/samvirke_base/samvirke_base.install"
+			],
+			[
+				"screen.css",
+				"themes/zammweerkeh/css/screen.css"
+			],
+			[
+				"views.css",
+				"themes/zammweerkeh/css/views.css"
+			],
+			[
+				"viewcounter",
+				"modules/contrib/views/handlers/views_handler_field_counter.inc"
+			],
+			[
+				"screen.c",
+				"sites/all/themes/zammweerkeh/css/screen.css"
+			],
+			[
+				"zammview",
+				"sites/all/themes/zammweerkeh/css/views.css"
+			],
+			[
+				"customcontentinfo",
+				"sites/all/modules/samvirke_custom_content/samvirke_custom_content.info"
+			],
+			[
+				"sambaseinsa",
+				"sites/all/modules/samvirke_base/samvirke_base.install"
+			],
+			[
+				"sambasein",
+				"sites/all/modules/samvirke_base/samvirke_base.info"
+			],
+			[
+				"samvirke_custom_page.features.content.inc",
+				"sites/all/modules/samvirke_custom_page/samvirke_custom_page.features.content.inc"
+			],
+			[
+				"samvirke_custom_content.features.content.inc",
+				"sites/all/modules/samvirke_custom_content/samvirke_custom_content.features.content.inc"
+			],
+			[
+				"samvibaseinsta",
+				"sites/all/modules/samvirke_base/samvirke_base.install"
+			],
+			[
+				"samvirke_artifeatures.content",
+				"sites/all/modules/samvirke_article/samvirke_article.features.content.inc"
+			],
+			[
+				"samviartfi",
+				"sites/all/modules/samvirke_article/samvirke_article.features.inc"
+			],
+			[
+				"tinycon",
+				"sites/all/themes/zammweerkeh/css/tinymce-content.css"
+			],
+			[
+				"insertwith",
+				"sites/all/modules/insert_image_with_text/insert_image_with_text.module"
+			],
+			[
+				"screnc",
+				"sites/all/themes/zammweerkeh/css/screen.css"
+			],
+			[
+				"tincont",
+				"sites/all/themes/zammweerkeh/css/tinymce-content.css"
+			],
+			[
+				"zammtiny",
+				"sites/all/themes/zammweerkeh/css/tinymce.css"
+			],
+			[
+				"zammtempl",
+				"sites/all/themes/zammweerkeh/template.php"
+			],
+			[
+				"nodtiptp",
+				"sites/all/themes/zammweerkeh/node-tip.tpl.php"
+			],
+			[
+				"artitplphp",
+				"sites/all/themes/zammweerkeh/node-article.tpl.php"
+			],
+			[
+				"subjdefau",
+				"sites/all/modules/samvirke_subject_area/samvirke_subject_area.pages_default.inc"
+			],
+			[
+				"articlemodule",
+				"sites/all/modules/samvirke_article/samvirke_article.module"
+			],
+			[
+				"artigr2",
+				"sites/all/themes/zammweerkeh/views-view-fields--article-group-landing--attachment-2.tpl.php"
+			],
+			[
+				"articletpl",
+				"sites/all/themes/zammweerkeh/node-article.tpl.php"
+			],
+			[
+				"group-landing",
+				"sites/all/themes/zammweerkeh/views-view-fields--article-group-landing--attachment.tpl.php"
+			],
+			[
+				"viewcss",
+				"sites/all/themes/zammweerkeh/css/views.css"
+			],
+			[
+				"themelist",
+				"sites/all/themes/zammweerkeh/views-view-fields--theme-list.tpl.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 366.0,
+	"status_bar_visible": true
+}
