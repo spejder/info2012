@@ -2,18 +2,18 @@
   * ipad
   * TV 720P
   * TV 1080P
-- Lav grafik generator
+
 - Opsæt standard brugere og roller og dump til sql
-- Understøt en test-kø
-
-
-- Understøt video
-  * generaliser json til at vise "albums" hvor et album så kan være af typen image eller video
-  * generaliser javascript afspilleren så den afspiller et album ad gangen og kalder en delegate hver gang et album er færdig. Ved afslutninge af albummet undersøges der også om der er kommet nyt
-
+- Lav rent database-dump
+- Lav logik der ikke laver fades hvis der kun er ét billede i et album (til f.eks. beredskab)
 - Forbered noget der kan lave et reboot med et interval - f.eks. hver 4. time
-
 
 Johan
 - wifi
-- diverse tweaks
+- diverse tweaks til imaget
+- find ud af om lyd virker
+- opdater javascript koden til at fungere med den nye struktur
+
+Hardware
+- find ud af hvad der kan sættes til de der tv, har vi minijack -> minijack?
+
