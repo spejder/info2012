@@ -10,6 +10,9 @@
 - opdater shortcuts med video album
 - få en ide om hvilken opløsning sitet kører video med
 
+- indfør et sleep imellem albums
+- tickeren bør også vise datoer
+
 
 Johan
 - wifi
