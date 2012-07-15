@@ -46,7 +46,6 @@
     jQuery("#marquee").html();
     $("#marquee").html('');
     for (var item in this) {
-      console.log("item: " + this[item]);
         $("#marquee").append('<span class="news-item">'+ this[item] + '</span>');
     }
     Cufon.refresh('.ticker');

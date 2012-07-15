@@ -3,10 +3,13 @@
   * TV 720P
   * TV 1080P
 
-- Opsæt standard brugere og roller og dump til sql
-- Lav rent database-dump
 - Lav logik der ikke laver fades hvis der kun er ét billede i et album (til f.eks. beredskab)
-- Forbered noget der kan lave et reboot med et interval - f.eks. hver 4. time
+
+- få master til automatisk at bruge backend.<domæne> ?
+
+- opdater shortcuts med video album
+- få en ide om hvilken opløsning sitet kører video med
+
 
 Johan
 - wifi
