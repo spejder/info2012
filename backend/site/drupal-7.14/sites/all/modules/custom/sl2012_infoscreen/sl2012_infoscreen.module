@@ -68,8 +68,12 @@ function sl2012_get_albums($prefix) {
         //$imagesize = getimagesize($src);
         $caption = isset($image->field_caption['und']) ? $image->field_caption['und'][0]['safe_value'] : '';
 
+
+        $byline = isset($image->field_byline['und']) ? $image->field_byline['und'][0]['safe_value'] : '';
+        $byline = str_replace(array("\r", "\r\n", "\n"), ' ', $byline);
+
         array_push($images, array(
-          'byline' => isset($image->field_byline['und']) ? $image->field_byline['und'][0]['safe_value'] : '',
+          'byline' => $byline,
           'caption' => nl2br($caption),
           'src' => $src,
           )
@@ -79,6 +83,7 @@ function sl2012_get_albums($prefix) {
       array_push($return_albums, array(
         'type' => 'image',
         'title' => $album_node->title,
+        'duration' => $album_node->field_duration[LANGUAGE_NONE][0]['value'],
         'content' => $images,
         )
       );
@@ -91,6 +96,8 @@ function sl2012_get_albums($prefix) {
 
         $video_caption = isset($video->field_video_caption[LANGUAGE_NONE]) ? $video->field_video_caption[LANGUAGE_NONE][0]['safe_value'] : '';
         $video_byline = isset($video->field_video_byline[LANGUAGE_NONE]) ? $video->field_video_byline[LANGUAGE_NONE][0]['safe_value'] : '';
+        $video_byline = str_replace(array("\r", "\r\n", "\n"), ' ', $video_byline);
+
         $video_id = isset($video->field_video_id[LANGUAGE_NONE]) ? $video->field_video_id[LANGUAGE_NONE][0]['safe_value'] : '';
 
 
