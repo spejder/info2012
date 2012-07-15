@@ -1,4 +1,4 @@
-var baseurl = "http://infobackend.dev/info";
+var baseurl = "http://infobackend.dev.dds.dk/info";
 
 var feed_proxy = {
    fetch: function(callback) {
