@@ -25,6 +25,10 @@
 <script src="http://www.google.com/jsapi" type="text/javascript"></script>
 <script type="text/javascript" src="js/video-slider.js"></script>
 
+<!-- backend communication -->
+<script type="text/javascript" src="js/feed_proxy_impl.js"></script>
+<script type="text/javascript" src="js/model.js"></script>
+<script type="text/javascript" src="js/sl2012-master.js"></script>
 
 <!-- font -->
 <script src="js/cufon-yui.js" type="text/javascript"></script>
@@ -35,109 +39,31 @@
   $(document).ready(function(){
     Cufon.replace('.ticker');
     Cufon.replace('#text-container');
-
-    // DEBUG CODE:
-      var video_album = {
-        "type": "video",
-        "title": "Alle timelapses",
-        "content":[
-          {
-            "byline": "MHD",
-            "caption": "En video",
-            "src": "B_cBAiZh1zE"
-          },
-          {
-            "byline": "MHD",
-            "caption": "En anden video",
-            "src": "oquGdcq9PbE"
-          }
-        ]
-      };
-
-       var photo_album = {
-        "type": "image",
-        "title": "Billeder fra fredag",
-        "content":
-          [
-            {
-              "byline": "MHD",
-              "caption": "Beskrivelse 5",
-              "src": "http://flab.dk/~mads/sl2012/info/IMG_0209_0.jpg",
-            },
-            {
-              "byline": "Random dude",
-                "caption": "Beskrivelse 1",
-              "src": "http://flab.dk/~mads/sl2012/info/IMG_0204_1.jpg",
-            }
-          ]
-      };
-
-      // attached to window. as a hack until we get subscription
-      //playVideoAlbum(video_album, function(){console.log("playback completed");});
-      var albums = [photo_album, video_album];
-      var albumCount = 0;
-
-      var playNextAlbum = function(){
-        console.log("master: album count: " + albumCount + " length: " + albums.length + " mod: " + albumCount % albums.length);
-        // TODO: do clever stuff to discover if we have new data
-        if(albums.length > 0){
-          var album = albums[albumCount % albums.length];
-
-          if(album.type == "image"){
-            console.log("master: playing image album");
-            playPhotoAlbum(album, playNextAlbum);
-          }
-          else if(album.type == "video"){
-            console.log("master: playing video album");
-            playVideoAlbum(album, playNextAlbum)
-          }
-          albumCount++;
-        }
-      };
-
-      playNextAlbum();
-
   });
 </script>
 
 
 </head>
-<body>
-  <div id="horizon">
-        <div id="canvas">
-          <div id="upper" class="canvas-section">
-            <div class="clock vcenter"><div class="center" id="clock">13:37:00</div></div>
-            <div class="media">
-
-              <div class="media-inner" id="mediacanvas">
-
-              </div>
-              <div class="mediacurtain" id="mediacurtain" ></div>
-
-            </div>
-
-            <div id="text-container">
-              <div id="bodytext"></div>
-              <div id="byline"></div>
-            </div>
-
+  <body>
+    <div id="horizon">
+      <div id="canvas">
+        <div id="upper" class="canvas-section">
+          <div class="clock vcenter"><div class="center" id="clock">13:37:00</div></div>
+          <div class="media">
+            <div class="media-inner" id="mediacanvas"></div>
+            <div class="mediacurtain" id="mediacurtain" ></div>
           </div>
-          <div id="lower" class="canvas-section">
-            <div class="ticker vcenter">
-              <div class="marquee">
-                <span class="news-item">
-                  <b>Nyhed 1:</b> En nyhed om noget
-                </span>
-                <span class="news-item">
-                  <b>Nyhed 2:</b> En nyhed om andet
-                </span>
-                <span class="news-item">
-                  <b>Nyhed 3:</b> En nyhed om tredje
-                </span>
-              </marquee>
-            </div>
+          <div id="text-container">
+            <div id="bodytext"></div>
+            <div id="byline"></div>
+          </div>
+        </div>
+        <div id="lower" class="canvas-section">
+          <div class="ticker vcenter">
+            <div class="marquee" id="marquee"></div>
           </div>
         </div>
       </div>
-      </body>
+    </div>
+  </body>
 </html>

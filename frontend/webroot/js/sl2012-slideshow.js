@@ -9,7 +9,7 @@
    // hack for now that it is attached to the window
   window.playPhotoAlbum = function playPhotoAlbum(images, callback){
 
-      log_debug("playing photo album");
+      log_debug("playing photo album " + images.title + " with duration " + images.duration);
 
       // clear out previous content
       $content = $('#mediacanvas');
@@ -58,6 +58,13 @@
       // then let the container show
       $imgcontainer.show();
 
+
+      var timeout = 10 * 1000;
+
+      if(images.duration > 0){
+        timeout = images.duration * 1000;
+      }
+
       // start the slideshow
         console.log("photo: fadeout + start");
         jQuery(".mediacurtain").fadeOut(2000,function(){
@@ -87,18 +94,12 @@
               jQuery(".mediacurtain").fadeIn(2000, callback);
               $('#byline').html('');
               $('#bodytext').html('');
-            }
+            },
+            timeout: timeout,
+            speed: 2000
+
           })});
 
     };
-
-  //TODO: Subscribe to image feed
-
-//    feed_subscribe_images(function() {
-//        updateSlideshow(this.images);
-//        log_debug("Slideshow content fetched");
-//    });
-
-
 
 })();
