@@ -4,7 +4,7 @@
  * Date: 4/21/12
  */
 (function() {
-  google.load("swfobject", "2.1");
+  google.load("swfobject", "2.2");
 
   var videoNo = 0;
   var currentAlbum;
@@ -98,6 +98,15 @@
     jQuery(".mediacurtain").fadeOut(2000, playNext);
   };
 
+  var loadCallback = function(e){
+    if(!e.success){
+      console.log("video: Failed to load player - wrapping up");
+      unloadPlayer();
+    }else{
+      console.log("video: load successful");
+    }
+  };
+
   // load youtube player behind the curtain
   function loadPlayer() {
     console.log("video: loading");
@@ -115,7 +124,7 @@
 
     swfobject.embedSWF("http://www.youtube.com/apiplayer?" +
                        "version=3&enablejsapi=1&playerapiid=player1",
-                       "videoholder", canvas.width(), canvas.height(), "9", null, null, params, atts);
+                       "videoholder", canvas.width(), canvas.height(), "9", null, null, params, atts, loadCallback);
     // when the player as loaded it will invoke our onYouTubePlayerReady function.
   }
 
