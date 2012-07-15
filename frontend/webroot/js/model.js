@@ -7,19 +7,14 @@
 
 (function() {
 
-    var image_subscribers = [];
-    var video_subscribers = [];
+    var album_subscribers = [];
     var news_subscribers = [];
     var mode_subscribers = [];
 
 	var cache;
 
-    window.feed_subscribe_images = function(callback) {
-        subscribe(callback, image_subscribers);
-    }
-
-    window.feed_subscribe_video = function(callback) {
-        subscribe(callback, video_subscribers);
+    window.feed_subscribe_albums = function(callback) {
+        subscribe(callback, album_subscribers);
     }
 
     window.feed_subscribe_news = function(callback) {
@@ -37,13 +32,11 @@
 			//Feed proxy can return false if content fetch failed
 			if (data) {
 				if (cache) {
-					if (data.images.toString() != cache.images.toString()) notify(image_subscribers, data);
-					if (data.video.toString() != cache.video.toString()) notify(video_subscribers, data);
+					if (data.albums.toString() != cache.albums.toString()) notify(album_subscribers, data);
 					if (data.news.toString() != cache.news.toString()) notify(news_subscribers, data);
 					if (data.mode.toString() != cache.mode.toString()) notify(mode_subscribers, data);
 				} else {
-					notify(image_subscribers, data);
-					notify(video_subscribers, data);
+					notify(album_subscribers, data);
 					notify(news_subscribers, data);
 					notify(mode_subscribers, data);
 
