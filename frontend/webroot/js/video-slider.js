@@ -30,7 +30,7 @@
 
       var video = currentAlbum.content[videoNo];
       ytplayer.cueVideoById(video.src);
-      ytplayer.setPlaybackQuality('hd1080');
+      ytplayer.setPlaybackQuality('hd720');
 
        $('#bodytext').html(video.caption);
 
