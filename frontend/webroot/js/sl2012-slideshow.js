@@ -8,7 +8,10 @@
 
    // hack for now that it is attached to the window
   window.playPhotoAlbum = function playPhotoAlbum(images, callback){
-
+    if(images.content.lengt === 0){
+      callback();
+      return;
+    }
       log_debug("playing photo album " + images.title + " with duration " + images.duration);
 
       // clear out previous content
@@ -96,7 +99,7 @@
               $('#bodytext').html('');
             },
             timeout: timeout,
-            speed: 2000
+            speed: 500
 
           })});
 

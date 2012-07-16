@@ -30,6 +30,7 @@
 
       var video = currentAlbum.content[videoNo];
       ytplayer.cueVideoById(video.src);
+      ytplayer.setPlaybackQuality('hd1080');
 
        $('#bodytext').html(video.caption);
 
@@ -41,6 +42,7 @@
 
        // update fonts
        Cufon.refresh('#text-container');
+
 
       ytplayer.playVideo();
       videoNo++;
