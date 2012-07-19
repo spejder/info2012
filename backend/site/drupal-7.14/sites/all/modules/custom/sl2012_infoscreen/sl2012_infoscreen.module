@@ -65,7 +65,8 @@ function sl2012_get_albums($prefix) {
         }
 
         // we force all images into a 1200x800 box, so no need to calculate this
-        //$imagesize = getimagesize($src);
+        // but we do it anyways as it forces imagecache to generate the image
+	$imagesize = getimagesize($src);
         $caption = isset($image->field_caption['und']) ? $image->field_caption['und'][0]['safe_value'] : '';
 
 
