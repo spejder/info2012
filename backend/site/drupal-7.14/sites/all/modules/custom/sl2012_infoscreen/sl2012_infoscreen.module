@@ -29,8 +29,15 @@ function sl2012_get_news($prefix) {
 
   $tickets = array();
   foreach ($nodes as $node) {
+    $date = new dateObject($node->field_date[LANGUAGE_NONE][0]['value']);
+    $cur_locale = setlocale('LC_ALL', 0);
+    setlocale('LC_ALL', 'da_DK');    
+    $date_unix = $date->format('U');
+        
+    $date_formatted = strftime("%a %e/%l", $date_unix);
+    setlocale('LC_ALL', $cur_locale);
     $body = field_get_items('node', $node, 'field_body');
-    array_push($tickets, '<b>' . $node->title . "</b>: " . $body[0]['value']);
+    array_push($tickets, '<b>' . $date_formatted . ', '  . $node->title . "</b>: " . $body[0]['value']);
   }
 
   return $tickets;
@@ -140,7 +147,7 @@ function sl2012_infoscreen_callback() {
     'albums' => $albums,
     'news' => $news,
     );
-
+ drupal_add_http_header('Expires', gmdate("D, d M Y H:i:s", time() + 60*2) ." GMT");
   drupal_json_output($output);
 }
 
