@@ -18,6 +18,7 @@
         if(album.content.length > videoNo){
             loadPlayer();
         }else{
+            console.log("video: last video played, invoking callback");
             videoNo = 0;
             completeCallback();
         }
@@ -96,7 +97,7 @@
     //Load an initial video into the player
 
     // we're ready to go, lift the curtain and start playing
-    console.log("fading out curtain");
+    console.log("video: fading out curtain");
     jQuery(".mediacurtain").fadeOut(2000, playNext);
   };
 
