@@ -4,6 +4,10 @@
 @height_1080: 1080px;
 @width_1080: (16/9)*@height_1080;
 
+@width_ipad: 980px;
+@height_ipad: (9/16)*@width_ipad;
+
+
 // anything below this wont be useable (ipad)
 @width_min: @width_1080;
 @height_min: @height_1080;
@@ -35,10 +39,10 @@ body{
   left: 50%;
   visibility: visible;
 
-   margin-left: -@width_min/2;
-    top: -@height_min/2;
-    width: @width_min;
-    height: @height_min;
+   margin-left: -@width_1080/2;
+    top: -@height_1080/2;
+    width: @width_1080;
+    height: @height_1080;
 }
 
 
@@ -222,5 +226,72 @@ body{
 .center{
   text-align: center;
 }
+
+
+// 720
+//
+@media only screen and (max-height : 800px) {
+  #canvas{
+    margin-left: -@width_720/2;
+    top: -@height_720/2;
+    width: @width_720;
+    height: @height_720;
+  }
+
+  #clock{
+    font-size: 65%;
+  }
+
+  .canvas-section#upper {
+    #byline{
+      font-size: 200%;
+    }
+
+    #bodytext{
+      font-size: 180%;
+
+    }
+  }
+
+  .canvas-section#lower .ticker {
+    font-size: 280%;
+
+  }
+}
+
+
+// ipad
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+
+  #canvas{
+    margin-left: -@width_ipad/2;
+    top: -@height_ipad/2;
+    width: @width_ipad;
+    height: @height_ipad;
+  }
+
+  #clock{
+    font-size: 65%;
+  }
+
+  .canvas-section#upper {
+    #byline{
+      font-size: 200%;
+    }
+
+    #bodytext{
+      font-size: 180%;
+
+    }
+  }
+
+  .canvas-section#lower .ticker {
+    font-size: 280%;
+
+  }
+}
+
 
 
