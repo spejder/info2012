@@ -30,14 +30,14 @@ function sl2012_get_news($prefix) {
   $tickets = array();
   foreach ($nodes as $node) {
     $date = new dateObject($node->field_date[LANGUAGE_NONE][0]['value']);
-    $cur_locale = setlocale('LC_ALL', 0);
-    setlocale('LC_ALL', 'da_DK');    
+    $cur_locale = setlocale(LC_ALL, 0);
+    setlocale(LC_ALL, 'da_DK');    
     $date_unix = $date->format('U');
         
-    $date_formatted = strftime("%a %e/%l", $date_unix);
-    setlocale('LC_ALL', $cur_locale);
+    $date_formatted = htmlentities(strftime("%a %e/%l", $date_unix));
+    setlocale(LC_ALL, $cur_locale);
     $body = field_get_items('node', $node, 'field_body');
-    array_push($tickets, '<b>' . $date_formatted . ', '  . $node->title . "</b>: " . $body[0]['value']);
+    array_push($tickets, '<b>' . $date_formatted . ' - ' .  htmlentities($node->title) . "</b>: " . htmlentities($body[0]['value']));
   }
 
   return $tickets;
@@ -73,7 +73,9 @@ function sl2012_get_albums($prefix) {
 
         // we force all images into a 1200x800 box, so no need to calculate this
         // but we do it anyways as it forces imagecache to generate the image
-	$imagesize = getimagesize($src);
+	if(is_readable($src)){
+	  $imagesize = getimagesize($src);
+	}
         $caption = isset($image->field_caption['und']) ? $image->field_caption['und'][0]['safe_value'] : '';
 
 
