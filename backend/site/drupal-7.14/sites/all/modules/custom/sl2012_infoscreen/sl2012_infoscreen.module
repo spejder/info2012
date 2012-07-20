@@ -31,13 +31,13 @@ function sl2012_get_news($prefix) {
   foreach ($nodes as $node) {
     $date = new dateObject($node->field_date[LANGUAGE_NONE][0]['value']);
     $cur_locale = setlocale(LC_ALL, 0);
-    setlocale(LC_ALL, 'da_DK');    
+    setlocale(LC_ALL, 'da_DK');
     $date_unix = $date->format('U');
-        
+
     $date_formatted = htmlentities(strftime("%a %e/%l", $date_unix));
     setlocale(LC_ALL, $cur_locale);
     $body = field_get_items('node', $node, 'field_body');
-    array_push($tickets, '<b>' . $date_formatted . ' - ' .  htmlentities($node->title) . "</b>: " . htmlentities($body[0]['value']));
+    array_push($tickets, '<b>' . $date_formatted . ' - ' .  $node->title . "</b>: " . $body[0]['value']);
   }
 
   return $tickets;
@@ -83,8 +83,8 @@ function sl2012_get_albums($prefix) {
         $byline = str_replace(array("\r", "\r\n", "\n"), ' ', $byline);
 
         array_push($images, array(
-          'byline' => htmlentities($byline),
-          'caption' => htmlentities(nl2br($caption)),
+          'byline' => $byline,
+          'caption' => nl2br($caption),
           'src' => $src,
           )
         );
@@ -92,7 +92,7 @@ function sl2012_get_albums($prefix) {
 
       array_push($return_albums, array(
         'type' => 'image',
-        'title' => htmlentities($album_node->title),
+        'title' => $album_node->title,
         'duration' => $album_node->field_duration[LANGUAGE_NONE][0]['value'],
         'content' => $images,
         )
@@ -112,8 +112,8 @@ function sl2012_get_albums($prefix) {
 
 
         array_push($videos, array(
-          'byline' => htmlentities($video_byline),
-          'caption' => htmlentities)nl2br($video_caption)),
+          'byline' => $video_byline,
+          'caption' => nl2br($video_caption),
           'src' => $video_id,
           )
         );
@@ -121,7 +121,7 @@ function sl2012_get_albums($prefix) {
 
       array_push($return_albums, array(
         'type' => 'video',
-        'title' => htmlentities($album_node->title),
+        'title' => $album_node->title,
         'content' => $videos,
         )
       );
