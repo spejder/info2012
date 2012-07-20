@@ -85,6 +85,7 @@
           }
         }else{
           console.log("Master: photo album rejected due to length of album " + album.content.length  + " or total number of albums " + albums.length);
+          setTimeout(playNextAlbum, 10*1000);
         }
       }
       else if(album.type == "video"){

@@ -9,6 +9,7 @@
   var videoNo = 0;
   var currentAlbum;
   var completeCallback;
+  var error = false;
 
   // attach to window until we get a way of registering this at load
   window.playVideoAlbum = function(album, callback){
@@ -70,18 +71,25 @@
   function unloadPlayerStep2(){
       swfobject.removeSWF("ytPlayer");
       console.log("player onloaded, invoking callback");
-      completeCallback();
+      if(error === true){
+        // take a break to prevent rapid looping
+        console.log("video: unloading due to an error - sleeping for 10 before doing callback");
+        setTimeout(completeCallback, 10*1000);
+      }else{
+        completeCallback();
+      }
 
   }
   // This function is called when an error is thrown by the player
   window.onPlayerError = function(errorCode) {
     alert("An error occured of type:" + errorCode);
+    error = true;
     playNext();
-  }
+  };
 
   // This function is called when the player changes state
   window.onPlayerStateChange = function(newState) {
-    if(newState == 0){
+    if(newState === 0){
       console.log("video: advacing to next video");
       playNext();
     }
@@ -104,6 +112,7 @@
   var loadCallback = function(e){
     if(!e.success){
       console.log("video: Failed to load player - wrapping up");
+      error = true;
       unloadPlayer();
     }else{
       console.log("video: load successful");
