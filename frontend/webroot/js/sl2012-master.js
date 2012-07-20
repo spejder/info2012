@@ -74,8 +74,8 @@
 
             // lift the curtain
             jQuery(".mediacurtain").fadeOut(2000,function(){
-              console.log("Single image: playing for 10 seconds then looping");
-              setTimeout(playNextAlbum, 10*1000);
+              console.log("Single image: playing for " + album.duration + " seconds then looping");
+              setTimeout(playNextAlbum, album.duration * 1000);
             });
           }else{
             // sleep for a while before we check for an update
