@@ -48,7 +48,7 @@
             $content.empty();
 
             // get the single image
-            var img = albums[0].content[0];
+            var img = album.content[0];
 
             // add the image
             $img = $('<img></img>')
