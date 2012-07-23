@@ -34,7 +34,7 @@ function sl2012_get_news($prefix) {
     setlocale(LC_ALL, 'da_DK');
     $date_unix = $date->format('U');
 
-    $date_formatted = htmlentities(strftime("%a %e/%l", $date_unix));
+    $date_formatted = htmlentities(strftime("%a %e/%m", $date_unix));
     setlocale(LC_ALL, $cur_locale);
     $body = field_get_items('node', $node, 'field_body');
     array_push($tickets, '<b>' . $date_formatted . ' - ' .  $node->title . "</b>: " . $body[0]['value']);
