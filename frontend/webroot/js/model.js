@@ -61,7 +61,7 @@
     $(setInterval(window.feed_fetch_data, 5000));
 
     //Reload page every 12 hours
-    var reloadFrequency = 12 * 60 * 60 * 1000;
+    var reloadFrequency = 3 * 60 * 60 * 1000;
 
     var pageReload = function() {
       log_debug("Reloading page...");

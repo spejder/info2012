@@ -151,7 +151,7 @@ function sl2012_infoscreen_callback() {
     'albums' => $albums,
     'news' => $news,
     );
- drupal_add_http_header('Expires', gmdate("D, d M Y H:i:s", time() + 60*2) ." GMT");
+// drupal_add_http_header('Expires', gmdate("D, d M Y H:i:s", time() + 60*2) ." GMT");
   drupal_json_output($output);
 }
 
