@@ -97,7 +97,10 @@
   };
 
   feed_subscribe_albums(function() {
-    console.log("master: update detected, " + this.length);
+    console.log("master: update detected, got " + this.length + " albums: ");
+    for(a in this){
+	console.log(" - " + this[a].title + " with " + this[a].content.length + " entries");
+    }
     newAlbums = this;
     albumsHasBeenUpdated = true;
 

@@ -26,7 +26,7 @@
     }
 
 	window.feed_fetch_data = function() {
-
+		console.log("Fetching json feed");
 		feed_proxy.fetch(function(data) {
 
 			//Feed proxy can return false if content fetch failed
@@ -57,10 +57,10 @@
             receivers[s].apply(dataObj);
     };
 
-    //Run fetch at document load
-    $(setInterval(window.feed_fetch_data, 5000));
-
-    //Reload page every 12 hours
+    //Run fetch at document load, reload every minute
+    $(setInterval(window.feed_fetch_data, 60 * 1000));
+    $(window.feed_fetch_data);
+    //Reload page every 3 hours
     var reloadFrequency = 3 * 60 * 60 * 1000;
 
     var pageReload = function() {
@@ -69,5 +69,4 @@
     };
 
     $(setInterval(pageReload, reloadFrequency));
-
 })();

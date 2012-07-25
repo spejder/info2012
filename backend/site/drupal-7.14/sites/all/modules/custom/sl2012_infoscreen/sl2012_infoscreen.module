@@ -25,7 +25,7 @@ function sl2012_infoscreen_menu() {
 function sl2012_get_news($prefix) {
   // TODO - put in configuration.
   $queue = nodequeue_load_queue_by_name($prefix . 'news');
-  $nodes = nodequeue_load_nodes($queue->qid);
+  $nodes = nodequeue_load_nodes($queue->qid, FALSE, 0, 999);
 
   $tickets = array();
   foreach ($nodes as $node) {
@@ -50,8 +50,8 @@ function sl2012_get_albums($prefix) {
 
   $queue = nodequeue_load_queue_by_name($prefix . 'slideshow');
 
-  $album_nodes = nodequeue_load_nodes($queue->qid);
-
+  $album_nodes = nodequeue_load_nodes($queue->qid, FALSE, 0, 999);
+dd(count($album_nodes) . " entries in album");
   $return_albums = array();
   // Load each album in order, add images from each album to the image list.
   foreach ($album_nodes as $album_node) {
